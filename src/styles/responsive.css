@@ -1,0 +1,14 @@
+/* Responsive helpers for the website kit */
+.aiaa-mobile-toggle { display: none; }
+@media (max-width: 900px) {
+  .aiaa-desktop-nav { display: none !important; }
+  .aiaa-mobile-toggle { display: flex !important; }
+  .aiaa-grid-4 { grid-template-columns: 1fr 1fr !important; }
+  .aiaa-grid-3 { grid-template-columns: 1fr !important; }
+  .aiaa-news-grid { grid-template-columns: 1fr !important; }
+  .aiaa-footer-grid { grid-template-columns: 1fr 1fr !important; gap: 28px !important; }
+}
+@media (max-width: 560px) {
+  .aiaa-grid-4 { grid-template-columns: 1fr !important; }
+  .aiaa-footer-grid { grid-template-columns: 1fr !important; }
+}

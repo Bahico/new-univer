@@ -1,0 +1,107 @@
+/* ===========================================================================
+   AIAA — Color tokens
+   Andijan Institute of Agriculture & Agrotechnologies
+   Green primary (agriculture), wheat-gold accent, green-tinted neutrals.
+   =========================================================================== */
+:root {
+  /* --- Brand green scale ------------------------------------------------- */
+  --green-50:  #edf6ee;
+  --green-100: #d3ead7;
+  --green-200: #a6d4ae;
+  --green-300: #72ba80;
+  --green-400: #439a57;
+  --green-500: #2a8442;  /* vivid */
+  --green-600: #1c7a43;  /* PRIMARY */
+  --green-700: #166537;
+  --green-800: #124d2b;
+  --green-900: #0e3b22;
+  --green-950: #082414;
+
+  /* --- Wheat / gold accent (secondary) ----------------------------------- */
+  --gold-50:  #fbf5e7;
+  --gold-100: #f5e7c2;
+  --gold-200: #ecd28a;
+  --gold-300: #e0b94f;
+  --gold-400: #d29e29;  /* ACCENT */
+  --gold-500: #b9851c;
+  --gold-600: #946514;
+
+  /* --- Neutral grays (faint cool-green tint) ----------------------------- */
+  --gray-0:   #ffffff;
+  --gray-50:  #f7f9f7;
+  --gray-100: #eef2ef;
+  --gray-200: #e0e6e1;
+  --gray-300: #c7d0c9;
+  --gray-400: #9aa69d;
+  --gray-500: #6c776f;
+  --gray-600: #4e574f;
+  --gray-700: #39413b;
+  --gray-800: #262c28;
+  --gray-900: #161a17;
+
+  /* --- Semantic status --------------------------------------------------- */
+  --success: #1c7a43;
+  --success-soft: #d3ead7;
+  --warning: #b9851c;
+  --warning-soft: #f5e7c2;
+  --danger:  #b42318;
+  --danger-soft: #fbe4e1;
+  --info:    #1f6fb2;
+  --info-soft: #dcebf6;
+
+  /* === Semantic aliases =================================================== */
+  --brand:            var(--green-600);
+  --brand-hover:      var(--green-700);
+  --brand-active:     var(--green-800);
+  --brand-contrast:   #ffffff;
+  --brand-soft:       var(--green-50);
+  --brand-soft-2:     var(--green-100);
+  --accent:           var(--gold-400);
+  --accent-hover:     var(--gold-500);
+  --accent-soft:      var(--gold-50);
+
+  --bg:               var(--gray-0);
+  --bg-subtle:        var(--gray-50);
+  --bg-muted:         var(--gray-100);
+  --surface-card:     #ffffff;
+  --surface-inverse:  var(--green-900);
+
+  --border:           var(--gray-200);
+  --border-strong:    var(--gray-300);
+  --divider:          var(--gray-100);
+
+  --text-strong:      var(--gray-900);
+  --text-body:        var(--gray-700);
+  --text-muted:       var(--gray-500);
+  --text-faint:       var(--gray-400);
+  --text-on-brand:    #ffffff;
+  --text-link:        var(--green-700);
+
+  --focus-ring:       color-mix(in srgb, var(--green-500) 55%, transparent);
+}
+
+/* === Optional dark theme ================================================= */
+[data-theme="dark"] {
+  --bg:              #0e1311;
+  --bg-subtle:       #131a16;
+  --bg-muted:        #1a221d;
+  --surface-card:    #161e19;
+  --surface-inverse: #0a1410;
+
+  --border:          #28332c;
+  --border-strong:   #34423a;
+  --divider:         #222b25;
+
+  --text-strong:     #f1f5f1;
+  --text-body:       #ccd6cf;
+  --text-muted:      #8d988f;
+  --text-faint:      #6b756e;
+  --text-link:       var(--green-300);
+
+  --brand:           var(--green-500);
+  --brand-hover:     var(--green-400);
+  --brand-active:    var(--green-300);
+  --brand-soft:      #14241a;
+  --brand-soft-2:    #18301f;
+  --accent:          var(--gold-300);
+}

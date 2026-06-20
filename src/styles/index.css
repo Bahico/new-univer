@@ -1,0 +1,7 @@
+/* AIAA University Design System — global entry (React export) */
+@import "./fonts.css";
+@import "./colors.css";
+@import "./typography.css";
+@import "./spacing.css";
+@import "./base.css";
+@import "./responsive.css";

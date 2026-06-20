@@ -1,0 +1,50 @@
+/* ===========================================================================
+   AIAA — Spacing, radii, shadows, layout tokens
+   8px base grid. Soft, low-spread shadows. Generously rounded cards.
+   =========================================================================== */
+:root {
+  /* Spacing scale (8px grid + half steps) */
+  --space-0: 0;
+  --space-1: 0.25rem;  /* 4  */
+  --space-2: 0.5rem;   /* 8  */
+  --space-3: 0.75rem;  /* 12 */
+  --space-4: 1rem;     /* 16 */
+  --space-5: 1.5rem;   /* 24 */
+  --space-6: 2rem;     /* 32 */
+  --space-7: 2.5rem;   /* 40 */
+  --space-8: 3rem;     /* 48 */
+  --space-9: 4rem;     /* 64 */
+  --space-10: 5rem;    /* 80 */
+  --space-12: 7rem;    /* 112 */
+  --space-14: 9rem;    /* 144 */
+
+  /* Radii — soft, friendly, rounded cards */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 22px;
+  --radius-2xl: 28px;
+  --radius-pill: 999px;
+
+  /* Shadows — soft, low spread, green-tinted ambient */
+  --shadow-xs: 0 1px 2px rgba(14, 59, 34, 0.06);
+  --shadow-sm: 0 1px 3px rgba(14, 59, 34, 0.08), 0 1px 2px rgba(14, 59, 34, 0.04);
+  --shadow-md: 0 4px 12px rgba(14, 59, 34, 0.08), 0 2px 4px rgba(14, 59, 34, 0.04);
+  --shadow-lg: 0 12px 28px rgba(14, 59, 34, 0.10), 0 4px 10px rgba(14, 59, 34, 0.05);
+  --shadow-xl: 0 24px 56px rgba(14, 59, 34, 0.14), 0 8px 18px rgba(14, 59, 34, 0.06);
+  --shadow-focus: 0 0 0 4px var(--focus-ring);
+
+  /* Layout */
+  --container: 1200px;
+  --container-narrow: 760px;
+  --container-wide: 1360px;
+  --header-h: 76px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 0.61, 0.36, 1); /* @kind other */
+  --ease-in-out: cubic-bezier(0.65, 0.05, 0.36, 1); /* @kind other */
+  --dur-fast: 140ms; /* @kind other */
+  --dur: 220ms; /* @kind other */
+  --dur-slow: 360ms; /* @kind other */
+}
